@@ -13,10 +13,11 @@
 #include "libft.h"
 /**
  * выделяет память и заполняет новый элемент.
- */
+*/
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*element;
+
 	element = (t_list *)malloc(sizeof(*element));
 	if (!element)
 		return (0);

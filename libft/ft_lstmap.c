@@ -14,12 +14,12 @@
 /**
  * применяет функцию f() ко всем элементам списка.
  * если не удалось применить функцию, отчищает список.
- */
+*/
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
 	t_list	*temp;
 	t_list	*list;
-	
+
 	list = 0;
 	while (lst)
 	{

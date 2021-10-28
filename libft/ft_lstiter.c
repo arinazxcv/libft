@@ -13,13 +13,13 @@
 #include "libft.h"
 /**
  * применяет функцию f() ко всем элементам списка.
- */
+*/
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*temp;
 
 	temp = lst;
-	while(temp)
+	while (temp)
 	{
 		f(temp->content);
 		temp = temp->next;

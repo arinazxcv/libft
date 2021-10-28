@@ -13,10 +13,10 @@
 #include "libft.h"
 /**
  * возврашает количество элементов списка.
- */
+*/
 int	ft_lstsize(t_list *lst)
 {
-	t_list *temp;
+	t_list	*temp;
 	size_t	i;
 
 	i = 0;

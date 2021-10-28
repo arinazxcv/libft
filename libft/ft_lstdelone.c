@@ -13,8 +13,8 @@
 #include "libft.h"
 /**
  * удаляет элемент списка и освобождает память.
- */
-void ft_lstdelone(t_list *lst, void (*del)(void*))
+*/
+void	ft_lstdelone(t_list *lst, void (*del)(void*))
 {
 	t_list	*temp;
 

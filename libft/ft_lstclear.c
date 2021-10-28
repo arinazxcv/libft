@@ -13,14 +13,14 @@
 #include "libft.h"
 /**
  * очищает список и освобождает память.
- */
-void ft_lstclear(t_list **lst, void (*del)(void*))
+*/
+void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*temp;
 	t_list	*buf;
 
 	temp = *lst;
-	while(temp)
+	while (temp)
 	{
 		del(temp->content);
 		buf = temp;

@@ -14,7 +14,7 @@
 /**
  * переходит к последнему элементу списка.
  */
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*temp;
 
