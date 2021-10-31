@@ -14,29 +14,29 @@
 /**
  * ищет с конца символ с в строке возвращает указатель на искомый символ.
  */
-char	*ft_strrchr(const char *s, int c)
+char	*ft_strrchr(const char *str, int c)
 {
-	char	*str;
-	size_t	i;
-	int		temp;
+	int		i;
+	int		last_char;
+	char	*copy_str;
 
 	i = 0;
-	temp = -1;
-	str = (char *)s;
+	last_char = -1;
+	copy_str = (char *)str;
 	while (str[i])
 	{
-		if (str[i] == (char)c)
-			temp = i;
+		if (str[i] == (char )c)
+			last_char = i;
 		i++;
 	}
-	if (str[i] == c)
-		temp = i;
-	if (temp == -1)
+	if (str[i] == (char )c)
+		last_char = i;
+	if (last_char == -1)
 		return (0);
-	while ((char) temp > 0)
+	while (last_char)
 	{
-		str++;
-		temp--;
+		copy_str++;
+		last_char--;
 	}
-	return (str);
+	return (copy_str);
 }
